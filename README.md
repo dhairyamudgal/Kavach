@@ -12,6 +12,7 @@ Aims to develop a system that can detect fileless malware in emails.
 
 # Dataset used:
 https://github.com/das-lab/mpsd
+We used 'malicious_pure' samples from the above link
 
 # Explaination of code in 'main.py':
 
