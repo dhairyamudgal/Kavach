@@ -1,6 +1,18 @@
 # Kavach Round 1
- Aims to develop a system that can detect fileless malware in emails.(Basic Implementation)
- 
+# Basic Implementation with code and screenshots
+
+# Aim:
+The part of the project aims to develop a system that can detect fileless malware in emails. To accomplish this, we obtain a dataset of known malicious scripts from GitHub. We preprocess this dataset by converting the scripts into a structured format that can be easily compared to the email text.
+
+When a new email arrives, the system extracts its details such as the subject, sender, and body of the email. It then compares the email text with the malicious script dataset to check for possible matches. If a match is found, the system alerts the user that the email may contain malware.
+The system provides a simple yet effective method for detecting fileless malware in emails. It leverages a dataset of known malicious scripts to compare against incoming emails and alert the user when a match is found.
+
+Aims to develop a system that can detect fileless malware in emails.
+
+
+# Dataset used:
+https://github.com/das-lab/mpsd
+
 # Explaination of code in 'main.py':
 
 This code uses the imaplib library in Python to establish a connection with a Gmail account via the Internet Message Access Protocol (IMAP). The yaml library is used to load login credentials (i.e., email address and password) from a YAML file. Once authenticated, the code selects the Inbox folder and searches for emails using a specific criterion (e.g., emails received since a particular date).
