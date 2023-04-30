@@ -22,6 +22,10 @@ After finding emails that match the search criteria, the code extracts their det
 
 The code works by using the fetch() method to retrieve the data of each email from the server. Then, the message_from_bytes() method is used to convert the raw email data into an email.message.Message object, which can be used to extract email details such as the subject, sender, and body. The code uses the walk() method to iterate through the parts of the message and checks if there is any plain text content in the email body. If plain text content is found, the check() function is called to check if the email body contains any malicious script.
 
+We can advance our serach option by adding filters to mails.
+ICMP allows certain search criterias which add filters to all mails in the users account.
+Link to these search Keys : https://gist.github.com/martinrusev/6121028
+Here we used the 'SINCE' Key
 
 # Using Google API 
 Basic implementation code in 'api.py'
