@@ -24,7 +24,6 @@ def check(a):
             if input_string in file_contents:
                 print(f"Match found in file: {filename}")
 
-    print("Match found in file: 1.ps1 \nMatch found in file: 3082.ps1")
 
 
 with open("credentials.yml") as f:
